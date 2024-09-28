@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:#222;
+
+}
+
+h4{
+    font-size: 20px;
+    color:#222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #1a1a1a;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: 0.2;
+}
+
+body{
+    width: 100%;
+}
+
+/* header */
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#0e3554;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header .logo{
+    width:150px;
+    height:35px;
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:orange;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+ /* ganti warna box service 
+#service .ser-box:nth-child(2) h6{
+    background-color:#98ba53;
+}
+*/
+ /* feature product */
+#feproduct{
+    text-align: center;
+}
+#feproduct .contain{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#feproduct .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #a6a3ac;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgb(205, 205, 205);
+    margin: 20px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#feproduct .pro:hover{
+    box-shadow: 10px 10px 15px rgb(127, 126, 126);
+}
+
+#feproduct .pro img{
+    width: 75%;
+    border-radius: 20px;
+}
+
+#feproduct .pro .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#feproduct .pro .desc span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#feproduct .pro .desc h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;   
+}
+
+#feproduct .pro .desc i{
+    font-size: 12px;
+    color: rgb(255, 213, 0)
+}
+
+#feproduct .pro .desc h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e4566;
+}
+
+#feproduct .pro .cart{
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color:#c4cfdb;
+    color:#363636;
+    border: 1px solid #4d4c4c;
+    position: absolute;
+    bottom:20px;
+    right: 10px;
+}
+
+
+
+
+/* newsletter */
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(Image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e04;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p{
+    font-size:14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline:none;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+
+#newsletter button{
+    background-color: #088178;
+    color:#fff;
+    white-space: nowrap;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    width: 150px;
+    height: 35px;
+}
+
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color:#465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .g2{
+    width: 100px;
+}
+
+footer .g3{
+    width: 150px;
+    height: 35px;
+}
+
+footer img {
+    width: 150px;
+    height: 90px;
+}
+
+
+@media (max-width:799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #1e4566;
+        box-shadow: 0 40px 60px rgba(0,0,0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.2s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 35px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #dfdfdf;
+        font-size: 24px;
+        padding-left: 24px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #dfdfdf;
+        font-size: 24px;
+    }
+
+    #m-bag{
+        display: none;
+    }
+
+    #details .des1{
+        width: 100%;
+    }
+   
+}
+
+@media (max-width : 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    #hero {
+        padding: 0 20px;
+    }
+
+    #newsletter {
+        padding: 40px 20px;
+    }
+
+    #newsletter .form{
+        width: 100%;
+    }
+
+    #footer.copyright{
+        text-align: start;
+    }
+
+    /*desc*/
+    #details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #details .big-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #details .small-details {
+        width: 100%;
+    }
+    
+    #feproduct .contain {
+        justify-content: center;
+    }
+
+}
+
+/* products */
+#P-header{
+    background-image: url(Image/pro.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#P-header h2, 
+#P-header p{
+    color: #fff;
+}
+
+#next{
+    text-align: center;
+}
+
+#next a{
+    text-decoration: none;
+    background-color: #366b96;
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*small-watch*/
+
+#details{
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  #details .big-image{
+      width: 50%;
+      margin-right: 50px;
+  }
+  
+  #details .small-details h4{
+      padding: 40px 0 20px 0;
+  }
+  #details .small-details h2{
+      font-size: 26px;
+  }
+  #details .small-details button{
+      background-color: #1b3a55;
+      color: #fff;
+  }
+  
+  #details .small-details span{
+      line-height: 25px;
+  }
+
+
+#details .des3{
+    width: 100%;
+}
+
+#details .des2{
+    width: 95%;
+}
+
+#details .des4{
+    width: 100%;
+}
+
+#details .des6{
+    width: 100%;
+}
+
+#details .des7{
+    width: 40vh;
+}
+
+#details .des8{
+    width: 40vh;
+}
+
+#details .des9{
+    width: 40vh;
+}
+
+#details .des10{
+    width: 41vh;
+}
+
+#details .des11{
+    width: 45vh;
+}
+
+
+
+
+
+
